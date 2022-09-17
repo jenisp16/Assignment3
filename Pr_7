@@ -1,7 +1,7 @@
 //Name:Jenis Patel
 //Student ID:21CE093
 
-interface camara
+interface camera
 {
     void TakePhoto();
     void ShootVideo();
