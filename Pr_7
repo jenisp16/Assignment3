@@ -1,0 +1,46 @@
+//Name:Jenis Patel
+//Student ID:21CE093
+
+interface camara
+{
+    void TakePhoto();
+    void ShootVideo();
+    void OpenCamera();
+    default void ShootIn4k()
+    {
+        System.out.println("Shooting in 4k");
+    }
+}
+class SmartPhone implements camera
+{
+    public void UnlockPhone()
+    {
+        System.out.println("Phone Unlocks");
+    }
+    public void OpenCamera()
+    {
+        System.out.println("Camera opens");
+    }
+    public void TakePhoto()
+    {
+        System.out.println("Taking photo");
+    }
+    public void ShootVideo()
+    {
+        System.out.println("Shooting video");
+    }
+    public void ShootIn4k()
+    {
+        System.out.println("4k rolling");
+    }
+}
+public class DefaultMethod();
+    public static void main(String[] args) {
+        SmartPhone S1=new SmartPhone();
+        S1.UnlockPhone();
+        S1.OpenCamera();
+        S1.TakePhoto();
+        S1.ShootVideo();
+        S1.ShootIn4k();
+    }
+}
