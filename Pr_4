@@ -22,7 +22,7 @@ class child extends parent
         System.out.println("From child..."+(m*n));
     }
 }
-public class MehodOverloading {
+public class MethodOverloading {
     public static void main(String[] args) {
         child c1= new child();
         c1.sum(10, 2);
